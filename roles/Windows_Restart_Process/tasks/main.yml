@@ -1,2 +1,10 @@
 ---
 # tasks file for Windows_Restart_Process
+- 
+  hosts: all
+  tasks:
+    - 
+      args:
+        executable: cmd
+      name: "Run ps1 scipt on the windows server"
+      win_shell: "Powershell /Users/jasonspeaking/Job/Code/PowerShell/test.ps1"
